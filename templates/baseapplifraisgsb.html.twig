@@ -15,13 +15,17 @@
         {% endblock %}
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+       
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link  href="/path/to/viewer.css" rel="stylesheet">
     </head>
 
     <body id="{% block body_id %}{% endblock %}">
 
         {% block main %}{% endblock %}
 
+
+    <script src="/path/to/viewer.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
