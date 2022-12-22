@@ -272,10 +272,10 @@ h1 #name {
   width: 60%;
   position: relative;
   top: 15%;
-  border: solid 1px #27367d;
+  border: solid 1px #242e5f;
   border-radius: 1rem;
   color: white;
-  background: #27367d;
+  background: #242e5f;
 }
 
 
@@ -529,7 +529,7 @@ hr {
 
 
 .experience {
-  margin: 0 0 4rem 0;
+  margin: 0 0 1rem 0;
   padding: 1rem;
   border: solid;
   border-color: #f2f2f2;
@@ -537,7 +537,6 @@ hr {
   width: 50%;
   position: relative;
   right: 7rem;
-  top: 2rem;
   background-color: #f2f2f2;
   transition: color .2s ease-in-out, background-color .1s ease-in-out,  all .2s ease-in-out;
 }
@@ -688,14 +687,94 @@ hr {
   height: 100%;
 }
 
+.logo_bts {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 90%;
+}
+
+.logo_bts img {
+  rotate: 20deg;
+  width: 17rem;
+  position: relative;
+  top: 2rem;
+  right: 15%;
+}
+
+.first_part_title {
+  width: 90%;
+  position: relative;
+  left: 10%;
+  top: 10%;
+}
+
+
+.first_part_title h1 {
+  font-size: 4rem;
+  background: linear-gradient(to right, black 0%, #FF4C60 13%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.first_part_title hr {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+
+.second_part_title {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+
+.second_part_title h1 {
+  font-size: 4rem;
+  top: 5rem;
+  position: relative;
+  right: 16%;
+  background: linear-gradient(to left, black 40%, #FF4C61 61%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 .video {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  display: flex;
-  width: 100%;
-  /* align-items: center; */
-  justify-content: center;
+  width: auto;
   position: relative;
-  top: 10%;
+  width: 90%;
+  top: 15%;
+  left: 10%;
+}
+
+
+.video hr {
+  margin: 3rem 0 2rem 0;
+  padding: 0;
+  width: 80%;
+}
+
+.filiere {
+  margin: 0 0 3rem 0;
+  position: relative;
+  top: 9rem;
+  width: 75%;
+  left: 10%;
+}
+
+.filiere p {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.filiere b {
+
+  text-decoration: underline;
+  color: #FF4C60;
 }
