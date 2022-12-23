@@ -289,8 +289,8 @@ h1 #name {
 }
 
 
-.my_infos a {
-  margin: 0;
+.my_infos #cv {
+  margin: 0 2rem 0 0;
   padding: 1rem;
   border: solid 1px #FF4C60;
   border-radius: 1rem 0 1rem 0;
@@ -368,6 +368,69 @@ h1 #name {
   }
 
 
+
+  /*POP UP*/
+
+
+  
+  .modal {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: auto;
+    height: auto;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    z-index: 2;
+    top: -12rem;
+    left: 10rem;
+    background-color: #575757;
+    border-radius: 20px;
+  }
+  
+  .modal .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  
+  .btn-close {
+    transform: translate(10px, -20px);
+    padding: 0.5rem 0.7rem;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2rem);
+    z-index: 1;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+
+  /* ////////////////////////////////////////////////////////////////// */
+
 #cursus {
   margin: 0;
   padding: 0 0 0 10%;
@@ -390,8 +453,8 @@ h1 #name {
   margin: 0 auto;
   padding: 2rem 0;
   width: 85%;
-  height: 80%;
-  top: 5%;
+  height: 85%;
+  top: 3%;
   background-color: snow;
   display: flex;
   justify-content: center;
@@ -400,8 +463,8 @@ h1 #name {
 
 
 .formations {
-  margin: 0;
-  padding: 2rem 0 0 2rem;
+  margin: 0 0 0 2rem;
+  padding: 1rem 0 0 2rem;
   width: 45%;
   height: 100%;
   border-left: solid 10px #FF4C60; 
@@ -410,9 +473,9 @@ h1 #name {
 
 .formations h2 {
   margin: 0;
-    padding: 0;
-    color: #FF4C60;
-    font-size: 2rem;
+  padding: 0;
+  color: #FF4C60;
+  font-size: 2rem;
 }
 
 
@@ -501,8 +564,8 @@ hr {
 
 
 .experiences {
-  margin: 0;
-  padding: 2rem 2rem 0 0;
+  margin: 0 2rem 0 0;
+  padding: 1rem 2rem 0 0;
   width: 45%;
   height: 100%;
   border-right: solid 10px #FF4C60;
@@ -529,12 +592,12 @@ hr {
 
 
 .experience {
-  margin: 0 0 1rem 0;
+  margin: 0;
   padding: 1rem;
   border: solid;
   border-color: #f2f2f2;
   text-align: center;
-  width: 50%;
+  width: 55%;
   position: relative;
   right: 7rem;
   background-color: #f2f2f2;
@@ -542,10 +605,17 @@ hr {
 }
 
 
+.experience p {
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+}
+
 .experience a {
   margin: 0;
-  padding: 0.25rem;
+  padding: 0.5rem;
   background-color: #ff9ea9;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
 }
 
 .experience::before {
@@ -574,6 +644,8 @@ hr {
 .experience:hover h4 {
   color: white;
 }
+
+
 
 
 .experience:hover::before {
