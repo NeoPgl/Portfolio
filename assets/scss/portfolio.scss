@@ -32,7 +32,8 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  //background: rgba(255, 255, 255, 0.2);
+  background-color: #FF4C60;
   animation: animate 15s linear infinite;
   bottom: -150px;
 }
@@ -163,58 +164,30 @@ ul li a:hover {
 
 #home {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 10%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .elements {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  justify-content: flex-start;
-  left: 10%;
   position: relative;
+  top: 30%;
 }
 
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  color: snow;
 }
 
-.typing-demo {
-  width: 54ch;
-  animation: typing 2s steps(54), blink 0.3s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-size: 2em;
-  margin: 0;
-  padding: 0;
-  color: white;
-  position: relative;
-  justify-content: center;
-  display: flex; 
-  justify-content: flex-start;
-  left: 10%;
-  top: 13rem;
-}
 
-@keyframes typing {
-  0% {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
 
 
 h1 #name {
@@ -223,26 +196,24 @@ h1 #name {
 }
 
 #more {
-  margin: 0;
+  margin: 0 auto;
   padding: 1rem;
-  top: 15rem;
   border: solid;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #FF4C60;
-  width: 9%;
+  width: 20%;
   position: relative;
-  left: 10%;
   text-align: center;
   box-shadow: inset 0 0 0 0 #FF4C60;
-  transition: color .4s ease-in-out, box-shadow .4s ease-out;
+  transition: color .4s ease-in-out, box-shadow .5s ease-out;
   text-decoration: none;
 }
 
 
 #more:hover {
   color: #fff;
-  box-shadow: inset 200px 0 0 0 #FF4C60;;
+  box-shadow: inset 290px 0 0 0 #FF4C60;;
 }
 
 
@@ -256,13 +227,16 @@ h1 #name {
   height: 100%;
 }
 
-#logo_user {
+#aboutme_title {
   margin: 0 auto;
   padding: 0;
-  color: #FF4C60;
-  position: static;
-  width: 6rem;
+  position: relative;
   display: flex;
+  top: 5%;
+  color: #FF4C60;
+  justify-content: center;
+  font-size: 2.5rem;
+  text-decoration: underline;
 }
 
 
@@ -369,7 +343,7 @@ h1 #name {
 
 
 
-  /*POP UP*/
+  /*POP UP /////////////////////////////////////////////////////////////////////////////////////////// */
 
 
   
@@ -385,7 +359,7 @@ h1 #name {
     min-height: 250px;
     position: absolute;
     z-index: 2;
-    top: -12rem;
+    top: -10rem;
     left: 10rem;
     background-color: #575757;
     border-radius: 20px;
@@ -429,7 +403,7 @@ h1 #name {
   }
 
 
-  /* ////////////////////////////////////////////////////////////////// */
+  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #cursus {
   margin: 0;
@@ -439,13 +413,15 @@ h1 #name {
   height: 100%;
 }
 
-#logo_school {
-  margin: 0 auto;
+#cursus_title {
+  margin: 1.5rem auto;
   padding: 0;
-  color: #FF4C60;
-  position: static;
-  width: 6rem;
+  position: relative;
   display: flex;
+  color: #FF4C60;
+  justify-content: center;
+  font-size: 2.5rem;
+  text-decoration: underline;
 }
 
 
@@ -679,6 +655,129 @@ hr {
 }
 
 
+
+/* POP UP 2: Rapport de stage 1ère année ////////////////////////////////////////////////////////////////// */
+.modal2 {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  width: auto;
+  height: auto;
+  padding: 1.3rem;
+  min-height: 250px;
+  position: absolute;
+  z-index: 2;
+  top: 210%;
+  right: 28%;
+  background-color: #575757;
+  border-radius: 20px;
+}
+
+.modal2 .flex2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.btn-close2 {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.overlay2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2rem);
+  z-index: 1;
+}
+
+.hidden2 {
+  display: none;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/* POP UP 3: Rapport de stage 2ème année ////////////////////////////////////////////////////////////////// */
+.modal3 {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  width: auto;
+  height: auto;
+  padding: 1.3rem;
+  min-height: 250px;
+  position: absolute;
+  z-index: 2;
+  top: 210%;
+  right: 28%;
+  background-color: #575757;
+  border-radius: 20px;
+}
+
+.modal3 .flex3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.btn-close3 {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.overlay3 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2rem);
+  z-index: 1;
+}
+
+.hidden3 {
+  display: none;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 #projets {
     margin: 0;
     padding: 0 0 0 10%;
@@ -687,13 +786,16 @@ hr {
     height: 100%;
 }
 
-#logo_case {
-  margin: 0 auto;
+#projets_title {
+  margin: 1.5rem auto;
   padding: 0;
-  color: #FF4C60;
-  position: static;
-  width: 6rem;
+  position: relative;
+  top: 5%;
   display: flex;
+  color: #FF4C60;
+  justify-content: center;
+  font-size: 2.5rem;
+  text-decoration: underline;
 }
 
 
@@ -826,83 +928,60 @@ hr {
   height: 100%;
 }
 
-.logo_bts {
-  position: absolute;
+#lebts_title {
+  margin: 0 auto 4.5rem;
+  padding: 0;
+  position: relative;
+  top: 5%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 90%;
+  color: #FF4C60;
+  justify-content: center;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+
+.inline_bts{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10rem 0 auto;
+  padding: 0;
+}
+
+.logo_bts {
+  display: flex;
 }
 
 .logo_bts img {
-  rotate: 20deg;
-  width: 17rem;
-  position: relative;
-  top: 2rem;
-  right: 15%;
-}
-
-.first_part_title {
-  width: 90%;
-  position: relative;
-  left: 10%;
-  top: 10%;
+ rotate: 90deg;
 }
 
 
-.first_part_title h1 {
-  font-size: 4rem;
-  background: linear-gradient(to right, black 0%, #FF4C60 13%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.first_part_title hr {
-  margin: 0;
-  padding: 0;
-  width: 80%;
-}
-
-
-.second_part_title {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  width: 90%;
-}
-
-
-.second_part_title h1 {
-  font-size: 4rem;
-  top: 5rem;
-  position: relative;
-  right: 16%;
-  background: linear-gradient(to left, black 40%, #FF4C61 61%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 
 .video {
-  margin: 0;
-  padding: 0;
-  width: auto;
-  position: relative;
-  width: 90%;
-  top: 15%;
-  left: 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 
-.video hr {
-  margin: 3rem 0 2rem 0;
+.video iframe {
+  border-radius: 1.5rem;
+}
+
+
+#hr_bts {
+  margin: 3rem auto;
   padding: 0;
   width: 80%;
 }
+
 
 .filiere {
   margin: 0 0 3rem 0;
   position: relative;
-  top: 9rem;
   width: 75%;
   left: 10%;
 }
@@ -915,5 +994,20 @@ hr {
 .filiere b {
 
   text-decoration: underline;
+  color: #FF4C60;
+}
+
+
+#go-up {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  bottom: 3%;
+  right: 0%;
+}
+
+#go-up svg {
+  width: 4rem;
   color: #FF4C60;
 }

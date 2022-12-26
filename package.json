@@ -25,6 +25,7 @@
     "build": "encore production --progress"
   },
   "dependencies": {
+    "morphext": "^2.4.7",
     "sass": "^1.54.9",
     "viewerjs": "^1.11.1"
   }

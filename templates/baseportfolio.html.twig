@@ -16,6 +16,7 @@
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="bower_components/Morphext/dist/morphext.css">
     </head>
 
     <body id="{% block body_id %}{% endblock %}">
@@ -23,6 +24,7 @@
         {% block main %}{% endblock %}
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="bower_components/Morphext/dist/morphext.min.js"></script>
     <script>
     AOS.init();
   </script>
