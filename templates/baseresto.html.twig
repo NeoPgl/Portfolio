@@ -8,7 +8,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>{% block title %}Symfony Demo application{% endblock %}</title>
+        <title>{% block title %}Mon Portfolio{% endblock %}</title>
         <link rel="alternate" type="application/rss+xml" title="{{ 'rss.title'|trans }}" href="{{ path('blog_rss') }}">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -17,7 +17,7 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
        
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link  href="/path/to/viewer.css" rel="stylesheet">
+        
     </head>
 
     <body id="{% block body_id %}{% endblock %}">
@@ -25,7 +25,7 @@
         {% block main %}{% endblock %}
 
 
-    <script src="/path/to/viewer.js"></script>
+   
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
