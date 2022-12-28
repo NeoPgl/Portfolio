@@ -66,5 +66,12 @@ body {
 }
 
 
+@media only screen and (max-width: 1024px) {
+
+    .cahier_charge embed {
+        width: 600px;
+        }
+}
+   
 
 
