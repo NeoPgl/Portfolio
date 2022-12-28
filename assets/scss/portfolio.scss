@@ -1031,6 +1031,7 @@ ul {
   gap: 1rem;
 }
 
+
 #home {
   margin: 0 auto;
   padding: 0;
@@ -1055,6 +1056,7 @@ h1 {
 
 #aboutme_title {
   margin: 2rem auto;
+  font-size: 2rem;
 }
 
 
@@ -1104,6 +1106,10 @@ h1 {
   margin: 0 auto;
   padding: 0;
   height: auto;
+}
+
+#cursus_title {
+  font-size: 2rem;
 }
 
 .group_cursus {
@@ -1175,7 +1181,9 @@ h1 {
 }
 
 #projets_title {
+  font-size: 1.75rem;
   top: 0%;
+  margin: 2.5rem auto;
 }
 
 .row_projets {
@@ -1208,6 +1216,15 @@ h1 {
   margin: 0 auto;
   padding: 1rem 0;
   height: auto;
+}
+
+#lebts_title {
+  font-size: 2rem;
+  top: 0%;
+}
+
+.inline_bts {
+  margin: 0 auto;
 }
 
 .logo_bts {
