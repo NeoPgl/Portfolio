@@ -264,15 +264,27 @@ h1 #name {
 
 
 .my_infos #cv {
-  margin: 0 2rem 0 0;
+  margin: 0 2rem;
   padding: 1rem;
   border: solid 1px #FF4C60;
   border-radius: 1rem 0 1rem 0;
   background-color: #FF4C60;
   text-decoration: none;
   color: white;
+  display: inline-block;
 }
 
+
+.my_infos #competence {
+  margin: 1rem 2rem;
+  padding: 1rem;
+  border: solid 1px #FF4C60;
+  border-radius: 1rem 0 1rem 0;
+  background-color: #FF4C60;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
 
 .my_infos span {
   margin: 0 0 1rem 1rem;
@@ -1087,6 +1099,12 @@ h1 {
 }
 
 .my_infos #cv {
+  margin: 0 0 1rem 0;
+  width: 100%;
+  position: relative;
+}
+
+.my_infos #competence {
   margin: 0 0 1rem 0;
   width: 100%;
   position: relative;
