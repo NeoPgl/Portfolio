@@ -221,6 +221,10 @@
     </section>
     <section id="veille">
       <a>Veille</a>
+      <img id="myImg" src="/assets-perso/screenJsMediumArticle1.png"  width="300" height="300">
+      <div id="myModal" class="modal4">
+        <img class="modal-content" id="img01">
+      </div>
     </section>
     <section id="lebts">
     <h2 id="lebts_title" data-aos="fade-up" data-aos-duration="1500">Présentation du BTS SIO</h2>
@@ -358,6 +362,37 @@ const openModal3 = function () {
 };
 // open modal event
 openModalBtn3.addEventListener("click", openModal3);
+
+
+
+
+
+// Get the modal
+var modal4 = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal4.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+
+// When the user clicks on <span> (x), close the modal
+modal4.onclick = function() {
+    img01.className += " out";
+    setTimeout(function() {
+       modal4.style.display = "none";
+       img01.className = "modal-content";
+     }, 400);
+    
+ }
+
+
 
 
 
