@@ -16,7 +16,10 @@
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     </head>
 
     <body id="{% block body_id %}{% endblock %}">
@@ -24,6 +27,7 @@
         {% block main %}{% endblock %}
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     
     
     <script>
     AOS.init();
